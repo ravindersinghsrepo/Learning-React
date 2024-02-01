@@ -1,0 +1,37 @@
+CODE till 2nd episode in app js file 
+import React from "react";
+import ReactDOM from "react-dom";
+
+// React.createElement => Object =>(render method)=> HTML Element
+const heading = React.createElement('h1' , {id : "heading 1"} ,'Namaste React');
+
+// JSX Element -> not html inside javasciript
+// it is html/XML like syntax 
+const jsxHeading = <h1 id="heading" className="head">Namaste React using JSX🚀</h1>;
+
+// React Component -> class based(OLD) and 
+//functional component(NEW) = just a function that returns some JSX 
+const HeadingComponent = ()=>{
+    return (
+        <h1>This is a Functional component</h1>
+    )
+}
+
+const HeadingComponent2 = () =><h2>Also functional component</h2>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(heading);
+root.render(<HeadingComponent/>);
+------------------------------------------------------
+hook is a normal js function that react give to us for a specific purpose 
+--------------------------------------------
+// use effect is called everytime header component is rendered (if it does not have a dependency array )
+
+// only callback function is mandatory inside the useEffect function 
+
+// if no dependency array -> useeffect called on every component render
+
+// on adding the dependency array 
+
+// if empty dependency array -> useeffect is called only on initial render
+// if dependency array has btnName -> every time btnName changes -> use effect called
