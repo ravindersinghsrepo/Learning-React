@@ -4,6 +4,8 @@ export const LOGO_URL = "https://www.logodesign.net/logo/smoking-burger-with-let
 
 // this is called named export 
 
+export const MENU_API = 'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.65420&lng=77.23730&restaurantId='
 
+//https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.65420&lng=77.23730&restaurantId=780417&catalog_qa=undefined&submitAction=ENTER
 
 
