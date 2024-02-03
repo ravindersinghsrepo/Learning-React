@@ -35,3 +35,6 @@ hook is a normal js function that react give to us for a specific purpose
 
 // if empty dependency array -> useeffect is called only on initial render
 // if dependency array has btnName -> every time btnName changes -> use effect called
+--------------------------------------------------------
+
+Link tag is using better since it refreshes the component only whereas using anchor tag will result in reloading the entire page .
