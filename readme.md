@@ -38,3 +38,28 @@ hook is a normal js function that react give to us for a specific purpose
 --------------------------------------------------------
 
 Link tag is using better since it refreshes the component only whereas using anchor tag will result in reloading the entire page .
+
+----------------------------------------------------------------
+class based component is a js class only 
+class xyz extends React.component{
+    // here extends React.Component tells react that this is a class based component
+}
+React.Component(is a class) comes from 'react'
+class based component has render method
+render method returns some jsx 
+props received in constructor function of class based component 
+we have to right super(props) // mandatory (why? -> HW)
+whenever a new instance of class is created -> constructor is called then
+Now we can use prop anywhere in the class
+
+what does it means "creating an instance of class" ? 
+loading a class based component onto the webpage or our app
+whenever we do this constructor is called.  (Best place to create a state variable :. we create state variable inside the constructor)
+we create state by 
+this.state={
+
+}
+
+state varible is modified in class component by this.setstate , this object will contain the updated value of the state variable 
+
+Cycle of how a component is mounted on the UI 
