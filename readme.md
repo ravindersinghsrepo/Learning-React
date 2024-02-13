@@ -63,3 +63,46 @@ this.state={
 state varible is modified in class component by this.setstate , this object will contain the updated value of the state variable 
 
 Cycle of how a component is mounted on the UI 
+
+
+/**
+ -Parent constructor
+ -parent render
+       -akshay constructor
+       -akshay render
+
+       -elon constructor
+       -elon render 
+
+       -akshay CDM(Component Did Mount) (BUT why ?)
+       -elon CDM 
+
+-parent CDM
+ */
+
+ //NEVER UPDATE STATE VARIABLE DIRECTLY
+                this.setState({
+                    count:this.state.count+1
+                })
+
+
+
+// Reat life cycle method 
+
+// MOUTNING PHASE 
+
+// constructor (dummy)     
+// render (with dummy data)           
+      <HTML dummy data >
+componentDidMount  Called
+      {api call here}      
+      this.setState() // for populating the received data 
+
+------UPDATE PHASE
+    (state variable updated) 
+    render(api data)
+    <HTML loaded with new data>
+
+Now componenetDidUpdate called
+--------Unmounting -> Component taken down from the ui 
+then compoenentWillUnmount will be called when the componenet is unmounted
