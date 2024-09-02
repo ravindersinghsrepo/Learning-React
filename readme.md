@@ -106,3 +106,30 @@ componentDidMount  Called
 Now componenetDidUpdate called
 --------Unmounting -> Component taken down from the ui 
 then compoenentWillUnmount will be called when the componenet is unmounted
+
+
+
+optimizing app 
+1) implementing Single resposibility principle 
+2)  parcel is a bundler 
+-> bunldes our app 
+-> takes all files and makes it one file (to be said simply)
+
+-> bundle size increases as our application becomes bigger and complex 
+-> if this happens app takes longer time to load .
+-> we will have to make smaller bundles of the file called chunking or code splitting or dunamic bundling or lazy loading 
+
+-> 1 bundle should have enough code to support one feature 
+--------------------------------------------
+episode 11
+Higher order component takes a component as input ans it will return us another updated or changed component (which returns a jsx) 
+
+controlled and uncontrolled component 
+UI layer(JSX) powered by data layer (states , props)
+Data has state props
+if we know how to manage our data in application we can make efficient applications 
+
+if we got to a restaurant card 
+
+
+
